@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Khai báo font chữ từ file local */
+@font-face {
+  font-family: 'Integral CF';
+  src: url('../src/assets/fonts/Demo_Fonts/Fontspring-DEMO-integralcf-extrabold.otf') format('truetype'); /* Đường dẫn tính từ thư mục public */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../src/assets/fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf') format(truetype);
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Đưa vào Theme của Tailwind v4 */
+@theme {
+  --font-satoshi: "Satoshi", sans-serif;
+  --font-integral: "Integral CF", sans-serif;
+  --font-sans: "Satoshi", ui-sans-serif, system-ui, sans-serif;
+}
+
+
+
